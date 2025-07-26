@@ -1,0 +1,109 @@
+.probleme-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 25px;
+  background: #ffebee;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.title {
+  color: #d32f2f;
+  text-align: center;
+  font-size: 2.2em;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.philosophical {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.simulator {
+  background: #333;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.problem-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.problem-btn {
+  background: #444;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.3s;
+}
+
+.problem-btn:hover {
+  background: #555;
+  transform: translateY(-2px);
+}
+
+.problem-btn.active {
+  background: #f44336;
+  animation: pulse 1s infinite;
+}
+
+.problem-name {
+  font-weight: bold;
+  font-size: 1.1em;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.problem-desc {
+  font-size: 0.8em;
+  opacity: 0.8;
+  display: block;
+}
+
+.disclaimer {
+  margin-top: 20px;
+  font-size: 0.8em;
+  color: #666;
+  text-align: center;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.shake {
+  animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+@keyframes shake {
+  10%, 90% { transform: translateX(-1px); }
+  20%, 80% { transform: translateX(2px); }
+  30%, 50%, 70% { transform: translateX(-4px); }
+  40%, 60% { transform: translateX(4px); }
+}
+
+@keyframes infinite-rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(80deg);
+  }
+}
+
+.rotate-forever {
+  animation: infinite-rotation 2s linear infinite alternate;
+}
