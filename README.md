@@ -256,15 +256,6 @@ Voici les membres de notre équipe et leurs responsabilités:
 - **Conceptrice, peecheur**: Conception du projet et autres responsabilités spécifiques
 
 
-### 🎯 Répartition des Modules par Développeur
-- **Module Redirection & Architecture** : [Nom 1]
-- **Modules Problème & Triche** : [Nom 2]
-- **Modules Chat & Socket** : [Nom 3]
-- **Modules Gaspillage & Jeux** : [Nom 4]
-- **Modules Outils & Documentation** : [Nom 5]
-
-*Remplacez les informations ci-dessus avec les vrais détails de votre équipe*
-
 ## 📁 Structure du Projet
 
 ```
@@ -279,8 +270,6 @@ stupid/
 ├── socket/                # Serveur Socket.io/WebSocket
 └── src/                   # Sources additionnelles
 ```
-
-## 🔧 Configuration
 
 Le projet utilise plusieurs certificats SSL locaux pour le développement HTTPS. Assurez-vous que les fichiers `localhost.pem` et `localhost-key.pem` sont correctement configurés.
 
