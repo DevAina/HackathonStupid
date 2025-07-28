@@ -118,20 +118,52 @@ nvm current # Devrait afficher "v22.17.1"
 # Vérification de la version npm :
 npm -v # Devrait afficher "10.9.2"
 ```
--Entrer dans le dossier extension
--  npm install -g pnpm
--Charger l’extension dans Chrome :
-Ouvrir chrome://extensions/
+## Installation et développement de l'extension
 
-Activer le mode développeur
+### Prérequis
+- Node.js
+- Chrome
 
-Cliquer sur Charger l’extension non empaquetée et chercher dans le fichier
+### Installation
 
-Sélectionner le dossier build (ou dist selon ta config):
-faire:
-pnpm install
-pnpm run build
-pnpm run dev
+1. Cloner le projet
+   ```bash
+   git clone [URL_DU_REPO]
+   ```
+
+2. Entrer dans le dossier extension
+   ```bash
+   cd stupid_aves_s
+   ```
+
+3. Installer pnpm globalement
+   ```bash
+   npm install -g pnpm
+   ```
+
+4. Installer les dépendances
+   ```bash
+   pnpm install
+   ```
+
+### Compilation et développement
+
+1. Pour construire l'extension
+   ```bash
+   pnpm run build
+   ```
+
+2. Pour le développement avec hot-reload
+   ```bash
+   pnpm run dev
+   ```
+
+### Chargement de l'extension dans Chrome
+
+1. Ouvrir Chrome et naviguer vers `chrome://extensions/`
+2. Activer le "Mode développeur" (en haut à droite)
+3. Cliquer sur "Charger l'extension non empaquetée"
+4. Sélectionner le dossier `build` (ou `dist` selon votre configuration) généré précédemment
 
 Si vous n'avez pas la flemme, voici comment installer et tester le site uniquement :
 
@@ -203,13 +235,25 @@ npx cap open android
 - `npm run lint` - Vérification du code
 - `npm run preview` - Prévisualisation du build
 
-## 👥 Équipe du Projet
+## Équipes
 
-GAEL: Full stack
-Judickael: Frontend
-Fanantenana: Extension
-Faniry: Fonctionnaliter boutton qui s'enfui
-Skoerasoa: Conceptrice, peecheur
+Voici les membres de notre équipe et leurs responsabilités:
+
+| Nom | Rôle |
+|-----|------|
+| GAEL | Full stack |
+| Judickael | Frontend |
+| Fanantenana | Extension |
+| Faniry | Fonctionnalité bouton qui s'enfuit |
+| Skoerasoa | Conceptrice, peecheur |
+
+## Description des rôles
+
+- **Full stack**: Développement côté client et serveur
+- **Frontend**: Développement de l'interface utilisateur
+- **Extension**: Développement des extensions du projet
+- **Fonctionnalité bouton qui s'enfuit**: Développement d'une fonctionnalité interactive spéciale
+- **Conceptrice, peecheur**: Conception du projet et autres responsabilités spécifiques
 
 
 ### 🎯 Répartition des Modules par Développeur
